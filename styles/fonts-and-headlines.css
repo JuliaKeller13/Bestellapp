@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: "Palanquin Dark", sans-serif;
     font-weight: 700;
     font-size: 48px;
 }
@@ -50,7 +50,15 @@ h1 span {
     color: rgb(61, 61, 61);
 }
 
-.subhead{
+.headline{
     font-size: 24px;
     text-align: center;
+}
+
+/*food section*/
+.subhead{
+    color: white;
+    font-family: "Palanquin";
+    font-size: 40px;
+    font-weight: 700;
 }
