@@ -26,20 +26,33 @@
     font-style: normal;
 }
 
+.header-inner p{
+    font-family: "Palanquin", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.header-inner p span{
+    color: rgba(177, 135, 81, 0.856);
+}
+
 body {
     font-family: "Palanquin", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    color: #5A3A2E;
 }
 
 h1 {
-    font-family: "Palanquin Dark", sans-serif;
+    font-family: "Palanquin", sans-serif;
     font-weight: 700;
     font-size: 48px;
+    color: #5A3A2E;
 }
 
 h1 span {
-    color: #E76C1F;
+    color: rgba(177, 135, 81, 0.856);
 }
 
 .reviews{
@@ -60,5 +73,13 @@ h1 span {
     color: white;
     font-family: "Palanquin";
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
+}
+
+/*footer*/
+footer{
+    color: white;
+    font-family: "Palanquin";
+    font-size: 18px;
+    font-weight: 400;
 }

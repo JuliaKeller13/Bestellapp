@@ -4,8 +4,9 @@
 }
 
 header {
-    background-color: #E76C1F;
+    background-color: #5A3A2E;
     height: 100px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 .header-inner {
@@ -24,11 +25,6 @@ header {
     flex-grow: 1;
 }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-}
-
 .content {
     width: calc(100% - 300px);
 }
@@ -45,14 +41,20 @@ header {
     padding: 10px;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero-cover {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url("./assets/imgs/hero.webp");
+    background-image: url("./assets/imgs/hover.webp");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     height: 400px;
+    background-blend-mode: darken;
 }
 
 .headline-container {
@@ -60,7 +62,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 65px;
+    margin-top: 100px;
+}
+
+.logo{
+    height: 80px;
 }
 
 .logo-with-reviews-container {
@@ -75,12 +81,16 @@ header {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    background-color: #FACAAC;
+    background-color: #b1875153;
     border-radius: 4px;
     padding: 0 5px 2px 5px;
 }
 
-.burger-logo {
+.reviews img{
+    width: 24px;
+}
+
+.kuchen-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,8 +98,13 @@ header {
     transform: translate(0, 40%);
 }
 
-.burger {
+.kuchen {
     width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 10px #FFF9F2;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 /*food sections*/
@@ -99,14 +114,24 @@ header {
     justify-content: flex-start;
     align-items: flex-end;
     gap: 20px;
-    background-color: #E76C1F;
+    background-color: #5A3A2E;
     margin-top: 80px;
     padding-left: 160px;
 }
 
 .subhead-icon {
-    height: 90px;
+    width: 90px;
     object-fit: contain;
     background: none;
     margin-bottom: -4px;
+}
+
+/*footer*/
+footer{
+    background-color: #5A3A2E;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
