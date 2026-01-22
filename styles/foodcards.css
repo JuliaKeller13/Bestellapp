@@ -13,15 +13,17 @@
     align-items: center;
     gap: 15px;
     padding: 10px;
-    background-color: #ebece9bb;
+    background-color: #ab916c3c;
     border-radius: 12px;
     margin-left: 80px;
     margin-right: 80px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 .food-card-img{
-    max-width: 200px;
-    height: 100%;
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
     border-radius: 12px;
 }
 

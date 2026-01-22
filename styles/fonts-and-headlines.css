@@ -83,6 +83,10 @@ h1 span {
     color: #5A3A2E;
 }
 
+.food-card-text-container p{
+    max-width:max-content;
+}
+
 /*footer*/
 footer{
     color: white;
