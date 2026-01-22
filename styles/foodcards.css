@@ -1,8 +1,7 @@
 .menu-cards{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 16px;
 }
 
@@ -13,28 +12,44 @@
     align-items: center;
     gap: 15px;
     padding: 10px;
-    background-color: #ab916c3c;
+    background-color: #ab916c29;
     border-radius: 12px;
-    margin-left: 80px;
-    margin-right: 80px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.food-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Schatten wird weicher/größer */
+    background-color: #ab916c38; /* Hintergrund wird minimal dunkler */
 }
 
 .food-card-img{
-    width: 200px;
+    width: 250px;
     height: 140px;
     object-fit: cover;
     border-radius: 12px;
+    flex-shrink: 0;
 }
 
-.food-card-title-with-price{
+.food-card-info{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+    height: 100%;
+}
+
+.food-card-title-with-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
 .food-card-buttons{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
 }

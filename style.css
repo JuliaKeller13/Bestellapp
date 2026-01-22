@@ -82,6 +82,7 @@ header {
     background-color: #ab916c3c;
     border-radius: 4px;
     padding: 0 5px 2px 5px;
+    cursor: pointer;
 }
 
 .reviews img {
@@ -116,7 +117,7 @@ header {
     background-color: #5A3A2E;
     margin-top: 80px;
     padding-left: 80px;
-    margin-bottom: 23px;
+    margin-bottom: 35px;
 }
 
 .subhead-icon {

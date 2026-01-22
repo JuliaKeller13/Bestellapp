@@ -18,7 +18,7 @@ const articles = [
   },
   {
     "title": "Marmorkuchen",
-    "img": "./assets/imgs/marmorkuchen.jpg",
+    "img": "./assets/imgs/marmorkuchen.png",
     "price": 4.30,
     "category": "Kuchen",
     "amount": 0,
@@ -26,7 +26,7 @@ const articles = [
   },
   {
     "title": "Nusskuchen",
-    "img": "./assets/imgs/nusskuchen.jpg",
+    "img": "./assets/imgs/nusskuchen.png",
     "price": 4.60,
     "category": "Kuchen",
     "amount": 0,
@@ -86,7 +86,7 @@ const articles = [
   // Donuts
   {
     "title": "Schoko Donut",
-    "img": "./assets/imgs/schokodonut.jpg",
+    "img": "./assets/imgs/schokodonut.png",
     "price": 2.20,
     "category": "Donuts",
     "amount": 0,
@@ -94,7 +94,7 @@ const articles = [
   },
   {
     "title": "Zucker Donut",
-    "img": "./assets/imgs/zuckerdonut.jpg",
+    "img": "./assets/imgs/sugardonut.png",
     "price": 2.00,
     "category": "Donuts",
     "amount": 0,
@@ -102,7 +102,7 @@ const articles = [
   },
   {
     "title": "Erdbeer Donut",
-    "img": "./assets/imgs/erdbeerdonut.jpg",
+    "img": "./assets/imgs/erdbeerdonut.png",
     "price": 2.30,
     "category": "Donuts",
     "amount": 0,
@@ -110,7 +110,7 @@ const articles = [
   },
   {
     "title": "Vanille Donut",
-    "img": "./assets/imgs/vanilledonut.jpg",
+    "img": "./assets/imgs/vanilledonut.png",
     "price": 2.40,
     "category": "Donuts",
     "amount": 0,
@@ -118,7 +118,7 @@ const articles = [
   },
   {
     "title": "Karamell Donut",
-    "img": "./assets/imgs/karamelldonut.jpg",
+    "img": "./assets/imgs/karamelldonut.png",
     "price": 2.50,
     "category": "Donuts",
     "amount": 0,
