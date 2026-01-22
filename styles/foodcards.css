@@ -19,8 +19,8 @@
 }
 
 .food-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Schatten wird weicher/größer */
-    background-color: #ab916c38; /* Hintergrund wird minimal dunkler */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ab916c38;
 }
 
 .food-card-img{

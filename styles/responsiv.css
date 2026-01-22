@@ -7,6 +7,21 @@
         display: none;
     }
 
+    header {
+        height: 80px;
+    }
+
+    .header-inner {
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    nav img{
+        display: none;
+    }
+
     .hero-cover {
         height: 350px;
         margin: 16px;
