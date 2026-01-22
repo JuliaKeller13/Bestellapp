@@ -1,0 +1,38 @@
+.menu-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.food-card{
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #ebece9bb;
+    border-radius: 12px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.food-card-img{
+    max-width: 200px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.food-card-title-with-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-card-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
