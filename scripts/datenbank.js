@@ -18,7 +18,7 @@ const articles = [
   },
   {
     "title": "Marmorkuchen",
-    "img": "./assets/imgs/marmorkuchen.png",
+    "img": "./assets/imgs/marmorkuchen.webp",
     "price": 4.30,
     "category": "Kuchen",
     "amount": 0,
@@ -26,7 +26,7 @@ const articles = [
   },
   {
     "title": "Nusskuchen",
-    "img": "./assets/imgs/nusskuchen.png",
+    "img": "./assets/imgs/nusskuchen.webp",
     "price": 4.60,
     "category": "Kuchen",
     "amount": 0,
@@ -44,7 +44,7 @@ const articles = [
   // Käsekuchen
   {
     "title": "Klassischer Käsekuchen",
-    "img": "./assets/imgs/cheesecake-classic.png",
+    "img": "./assets/imgs/cheesecake-classic.webp",
     "price": 4.80,
     "category": "Käsekuchen",
     "amount": 0,
@@ -52,7 +52,7 @@ const articles = [
   },
   {
     "title": "New York Käsekuchen",
-    "img": "./assets/imgs/newyork-cheescake.jpg",
+    "img": "./assets/imgs/newyorkcheescake.webp",
     "price": 5.20,
     "category": "Käsekuchen",
     "amount": 0,
@@ -60,7 +60,7 @@ const articles = [
   },
   {
     "title": "Himbeer-Käsekuchen",
-    "img": "./assets/imgs/himbeer-cheesecake.jpg",
+    "img": "./assets/imgs/himbeer-cheesecake.webp",
     "price": 5.00,
     "category": "Käsekuchen",
     "amount": 0,
@@ -76,7 +76,7 @@ const articles = [
   },
   {
     "title": "Karamell-Käsekuchen",
-    "img": "./assets/imgs/caramell-cheescake.png",
+    "img": "./assets/imgs/caramell-cheescake.webp",
     "price": 5.30,
     "category": "Käsekuchen",
     "amount": 0,
@@ -86,7 +86,7 @@ const articles = [
   // Donuts
   {
     "title": "Schoko Donut",
-    "img": "./assets/imgs/schokodonut.png",
+    "img": "./assets/imgs/schokodonut.webp",
     "price": 2.20,
     "category": "Donuts",
     "amount": 0,
@@ -94,7 +94,7 @@ const articles = [
   },
   {
     "title": "Zucker Donut",
-    "img": "./assets/imgs/sugardonut.png",
+    "img": "./assets/imgs/sugardonut.webp",
     "price": 2.00,
     "category": "Donuts",
     "amount": 0,
@@ -102,7 +102,7 @@ const articles = [
   },
   {
     "title": "Erdbeer Donut",
-    "img": "./assets/imgs/erdbeerdonut.png",
+    "img": "./assets/imgs/erdbeerdonut.webp",
     "price": 2.30,
     "category": "Donuts",
     "amount": 0,
@@ -110,7 +110,7 @@ const articles = [
   },
   {
     "title": "Vanille Donut",
-    "img": "./assets/imgs/vanilledonut.png",
+    "img": "./assets/imgs/vanilledonut.webp",
     "price": 2.40,
     "category": "Donuts",
     "amount": 0,
@@ -118,7 +118,7 @@ const articles = [
   },
   {
     "title": "Karamell Donut",
-    "img": "./assets/imgs/karamelldonut.png",
+    "img": "./assets/imgs/karamelldonut.webp",
     "price": 2.50,
     "category": "Donuts",
     "amount": 0,
@@ -128,7 +128,7 @@ const articles = [
   // Muffins
   {
     "title": "Schoko Muffin",
-    "img": "./assets/imgs/schokomuffin.jpg",
+    "img": "./assets/imgs/schokomuffin.webp",
     "price": 2.80,
     "category": "Muffins",
     "amount": 0,
@@ -136,7 +136,7 @@ const articles = [
   },
   {
     "title": "Blaubeer Muffin",
-    "img": "./assets/imgs/blaubeermuffin.jpg",
+    "img": "./assets/imgs/heidelbeermuffin.webp",
     "price": 2.90,
     "category": "Muffins",
     "amount": 0,
@@ -144,7 +144,7 @@ const articles = [
   },
   {
     "title": "Vanille Muffin",
-    "img": "./assets/imgs/vanillemuffin.jpg",
+    "img": "./assets/imgs/vanillemuffin.webp",
     "price": 2.70,
     "category": "Muffins",
     "amount": 0,
@@ -152,7 +152,7 @@ const articles = [
   },
   {
     "title": "Banane-Schoko Muffin",
-    "img": "./assets/imgs/bananeschokomuffin.jpg",
+    "img": "./assets/imgs/banane-schoko-muffin.webp",
     "price": 3.00,
     "category": "Muffins",
     "amount": 0,
@@ -160,7 +160,7 @@ const articles = [
   },
   {
     "title": "Zimt Muffin",
-    "img": "./assets/imgs/zimtmuffin.jpg",
+    "img": "./assets/imgs/zimtmuffin.webp",
     "price": 2.60,
     "category": "Muffins",
     "amount": 0,
