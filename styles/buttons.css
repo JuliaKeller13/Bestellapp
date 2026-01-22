@@ -1,8 +1,8 @@
 .add-to-basket-button{
     background-color: #89503684;
-    padding: 10px;
+    padding: 8px;
     border: solid 0 #5a482e;
-    border-radius: 8px;
+    border-radius: 30px;
     color: white;
     cursor: pointer;
 }
