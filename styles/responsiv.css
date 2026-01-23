@@ -89,6 +89,16 @@
         align-items: flex-end;
         flex-direction: row;
     }
+
+    footer {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    footer {
+        gap: 5px;
+        padding: 20px;
+    }
 }
 
 @media (min-width:768.1) and (max-width: 1024px) {
@@ -101,7 +111,7 @@
     }
 
     .content {
-    width: calc(100% - 250px);
-    margin-bottom: 50px;
-}
+        width: calc(100% - 250px);
+        margin-bottom: 50px;
+    }
 }
