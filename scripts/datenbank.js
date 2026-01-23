@@ -1,7 +1,7 @@
 const articles = [
   // Kuchen
   {
-    "title": "Saftiger Schokoladenkuchen",
+    "title": "Schokoladenkuchen",
     "img": "./assets/imgs/schokokuchen.jpg",
     "price": 4.50,
     "category": "Kuchen",
@@ -43,7 +43,7 @@ const articles = [
 
   // Käsekuchen
   {
-    "title": "Klassischer Käsekuchen",
+    "title": "Käsekuchen",
     "img": "./assets/imgs/cheesecake-classic.webp",
     "price": 4.80,
     "category": "Käsekuchen",
@@ -51,7 +51,7 @@ const articles = [
     "description": "Cremiger, traditioneller Käsekuchen mit buttrigem Boden und mildem Aroma."
   },
   {
-    "title": "New York Käsekuchen",
+    "title": "New York",
     "img": "./assets/imgs/newyorkcheescake.webp",
     "price": 5.20,
     "category": "Käsekuchen",
@@ -151,7 +151,7 @@ const articles = [
     "description": "Weicher Vanillemuffin mit feinem Aroma und goldener Kruste."
   },
   {
-    "title": "Banane-Schoko Muffin",
+    "title": "Bananen Muffin",
     "img": "./assets/imgs/banane-schoko-muffin.webp",
     "price": 3.00,
     "category": "Muffins",

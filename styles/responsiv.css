@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .content {
         width: auto;
     }
@@ -18,7 +18,7 @@
         margin-right: 18px;
     }
 
-    nav img{
+    nav img {
         display: none;
     }
 
@@ -89,4 +89,19 @@
         align-items: flex-end;
         flex-direction: row;
     }
+}
+
+@media (min-width:768.1) and (max-width: 1024px) {
+    .food-card-img {
+        width: 250px;
+    }
+
+    .basket-wrapper {
+        width: 250px;
+    }
+
+    .content {
+    width: calc(100% - 250px);
+    margin-bottom: 50px;
+}
 }

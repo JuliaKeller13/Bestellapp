@@ -16,6 +16,8 @@
     border-radius: 12px;
     max-width: 800px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .food-card:hover {
@@ -37,6 +39,7 @@
     flex-grow: 1;
     overflow: hidden;
     height: 100%;
+    gap: 15px;
 }
 
 .food-card-title-with-description{

@@ -19,11 +19,21 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face {    
     font-family: "Palanquin Dark";
     src: url("../assets/fonts/Palanquin_Dark/PalanquinDark-Bold.ttf");
     font-weight: 700;
     font-style: normal;
+}
+
+a, footer p{
+    text-decoration: none;
+    color: #ffffffce;
+    font-family: 'Times New Roman', serif;
+}
+
+a:hover{
+    color: #bc986a;
 }
 
 .header-inner p {
@@ -85,7 +95,7 @@ h3 {
 }
 
 .description {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Cambria", "Cochin", Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
     font-size: 16px;
     color: #5A3A2E;
@@ -95,9 +105,6 @@ h3 {
     font-family: "Palanquin";
     font-weight: 600;
     font-size: 24px;
-    line-height: 120%;
-    letter-spacing: 0%;
-
 }
 
 /*footer*/
