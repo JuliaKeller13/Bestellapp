@@ -1,117 +1,127 @@
 @media (max-width: 768px) {
-    .content {
-        width: auto;
-    }
+  .content {
+    width: auto;
+  }
 
-    .basket-wrapper {
-        display: none;
-    }
+  .basket-wrapper {
+    display: none;
+  }
 
-    header {
-        height: 80px;
-    }
+  header {
+    height: 80px;
+  }
 
-    .header-inner {
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 18px;
-        margin-right: 18px;
-    }
+  .header-inner {
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-    nav img {
-        display: none;
-    }
+  .burger {
+    display: none;
+  }
 
-    .hero-cover {
-        height: 350px;
-        margin: 16px;
-        border-radius: 16px;
-    }
+  .hero-cover {
+    height: 350px;
+    margin: 16px;
+    border-radius: 16px;
+  }
 
-    .kuchen {
-        width: 120px;
-        height: 120px;
-    }
+  .kuchen {
+    width: 120px;
+    height: 120px;
+  }
 
-    .headline-container {
-        margin-top: 70px;
-    }
+  .headline-container {
+    margin-top: 70px;
+  }
 
-    .headline {
-        margin-block-start: 0;
-    }
+  .headline {
+    margin-block-start: 0;
+  }
 
-    .logo-with-reviews-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-        gap: 16px;
-    }
+  .logo-with-reviews-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
 
-    .food-card {
-        height: auto;
-        flex-direction: column;
-        align-items: stretch;
-        max-width: 100%;
-    }
+  .food-card {
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+  }
 
-    .subhead-container {
-        gap: 2px;
-        margin-top: 0;
-        padding-left: 0;
-        margin-bottom: 80px;
-        margin-top: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+  .subhead-container {
+    gap: 2px;
+    margin-top: 0;
+    padding-left: 0;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 
-    .subhead {
-        font-size: 32px;
-    }
+  .subhead {
+    font-size: 32px;
+  }
 
-    .food-card-img {
-        width: 100%;
-        height: 150px;
-        flex-shrink: 0;
-    }
+  .food-card-img {
+    width: 100%;
+    height: 150px;
+    flex-shrink: 0;
+  }
 
-    .food-card-info {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .food-card-info {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .food-card-buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-direction: row;
-    }
+  .food-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+  }
 
-    footer {
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
+  footer {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
 
-    footer {
-        gap: 5px;
-        padding: 20px;
+  footer {
+    gap: 5px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768.1) and (max-width: 1024px) {
+  .food-card-img {
+    width: 250px;
+  }
+
+  .basket-wrapper {
+    width: 250px;
+  }
+
+  .content {
+    width: calc(100% - 250px);
+    margin-bottom: 50px;
+  }
+  .subhead-container-inner {
+    padding-left: 20px;
     }
 }
 
-@media (min-width:768.1) and (max-width: 1024px) {
-    .food-card-img {
-        width: 250px;
-    }
-
-    .basket-wrapper {
-        width: 250px;
-    }
-
-    .content {
-        width: calc(100% - 250px);
-        margin-bottom: 50px;
+@media (min-width: 1024.1) and (max-width: 1440px) {
+    .subhead-container-inner {
+    padding-left: 0;
     }
 }

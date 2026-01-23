@@ -132,11 +132,11 @@ header {
 
 .subhead-container-inner {
     display: flex;
-    align-items: flex-end;
-    gap: 20px;
-    padding-left:80px;
+    align-items: center;
+    gap: 10px;
     max-width: 1440px;
     margin: auto;
+    transform: translate(0, -10%);
 }
 
 .subhead-icon {
