@@ -6,6 +6,7 @@
 header {
     background-color: #5A3A2E;
     height: 100px;
+    width: 100%;
 }
 
 .header-inner {
@@ -14,8 +15,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 40px;
+    padding-left: 100px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+
+.logo-header {
+    height: 50px;
 }
 
 .content-wrapper {
@@ -109,16 +115,28 @@ header {
 }
 
 /*food sections*/
+.food-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .subhead-container {
     height: 60px;
+    background-color: #5A3A2E;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 35px;
+}
+
+.subhead-container-inner {
     display: flex;
-    justify-content: flex-start;
     align-items: flex-end;
     gap: 20px;
-    background-color: #5A3A2E;
-    margin-top: 80px;
-    padding-left: 80px;
-    margin-bottom: 35px;
+    padding-left:80px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .subhead-icon {

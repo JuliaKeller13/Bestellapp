@@ -30,6 +30,7 @@ a, footer p{
     text-decoration: none;
     color: #ffffffce;
     font-family: 'Times New Roman', serif;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a:hover{
