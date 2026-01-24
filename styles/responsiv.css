@@ -74,6 +74,8 @@
 
   .hero-cover {
     height: 350px;
+    margin: 16px;
+    border-radius: 16px;
   }
 
   .kuchen {

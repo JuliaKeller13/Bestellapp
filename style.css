@@ -48,21 +48,6 @@ header {
     border-left: 1px solid #eee;
 }
 
-.basket {
-    height: 80vh;
-    position: sticky;
-    top: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    text-align: center;
-}
-
-.basket-empty-img{
-    height: 120px;
-    
-}
 .hero {
     display: flex;
     flex-direction: column;

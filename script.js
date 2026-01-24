@@ -23,11 +23,7 @@ function renderFoodCards() {
   menuCardsCupcakesSection.innerHTML = "";
   menuCardsDonutsSection.innerHTML = "";
 
-  for (
-    let articleIndex = 0;
-    articleIndex < articles.length;
-    articleIndex++
-  ) {
+  for (let articleIndex = 0; articleIndex < articles.length; articleIndex++) {
     if (articles[articleIndex].category === "Kuchen") {
       menuCardsCakesSection.innerHTML += getFoodCardsHtml(articleIndex);
     }
@@ -43,29 +39,33 @@ function renderFoodCards() {
   }
 }
 
-//ad to basket
+//add to basket
 function addToBasket(articleIndex) {
-    const article = articles[articleIndex];
-    
-    let existingArticle = null;
-    for (let basketArticleIndex = 0; basketArticleIndex < basket.length; basketArticleIndex++) {
-        if (basket[basketArticleIndex].title === article.title) {
-            existingArticle = basket[basketArticleIndex];
-            break;
-        }
-    }
+  const article = articles[articleIndex];
 
-    if (existingArticle) {
-        existingArticle.amount++;
-    } else {
-        basket.push({
-            "title": article.title,
-            "price": article.price,
-            "amount": 1
-        });
+  let existingArticle = null;
+  for (
+    let basketArticleIndex = 0;
+    basketArticleIndex < basket.length;
+    basketArticleIndex++
+  ) {
+    if (basket[basketArticleIndex].title === article.title) {
+      existingArticle = basket[basketArticleIndex];
+      break;
     }
-    
-    renderBasket();
+  }
+
+  if (existingArticle) {
+    existingArticle.amount++;
+  } else {
+    basket.push({
+      title: article.title,
+      price: article.price,
+      amount: 1,
+    });
+  }
+
+  renderBasket();
 }
 
 function renderBasket() {
@@ -74,56 +74,33 @@ function renderBasket() {
   basketContent.innerHTML = "";
 
   if (basket.length === 0) {
-    basketContent.innerHTML = `<div class="basket-empty">
-                <div>
-                  Füge einige leckere Gerichte aus der Speisekarte hinzu
-                </div>
-                <img
-                  class="basket-empty-img"
-                  src="./assets/icons/shopping-cart-basket.png"
-                  alt="leerer Einkaufswagen"
-                />
-              </div>`;
+    basketContent.innerHTML += getEmptyBasketHtml();
     return;
   }
 
-  for (let basketArticleIndex = 0; basketArticleIndex < basket.length; basketArticleIndex++) {
+  for (let basketArticleIndex = 0;basketArticleIndex < basket.length; basketArticleIndex++) {
     const article = basket[basketArticleIndex];
-    const subtotal = article.price * article.amount;
-    totalSum += subtotal;
+    totalSum += article.price * article.amount;
 
-    basketContent.innerHTML += `
-            <div class="basket-articles">
-                <div class="basket-article-info">
-                    <b>${article.title}</b><br>
-                    ${article.price.toFixed(2)}€ x ${article.amount} = ${subtotal.toFixed(2)}€
-                </div>
-                <div class="basket-item-controls">
-                    <button onclick="changeAmount(${basketArticleIndex}, -1)">-</button>
-                    <span>${article.amount}</span>
-                    <button onclick="changeAmount(${basketArticleIndex}, +1)">+</button>
-                </div>
-            </div>
-            <hr>
-        `;
+    basketContent.innerHTML += getBasketArticleCardHtml(article, basketArticleIndex);
   }
 
   basketContent.innerHTML += `
+        <hr>
         <div class="basket-total">
             <strong>Gesamtsumme: ${totalSum.toFixed(2)}€</strong>
         </div>
     `;
 }
 
-
 //im Warenkorb Menge soll veränderbar sein, oder löschen bei 1
 
 function changeAmount(basketArticleIndex, change) {
-    basket[basketArticleIndex].amount += change;
+  basket[basketArticleIndex].amount += change;
 
-    if (basket[basketArticleIndex].amount <= 0) {
-        basket.splice(basketArticleIndex, 1);
-    }
+  if (basket[basketArticleIndex].amount <= 0) {
+    basket.splice(basketArticleIndex, 1);
+  }
 
-    renderBasket();
+  renderBasket();
 }
