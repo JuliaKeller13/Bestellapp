@@ -87,8 +87,8 @@ function renderBasket() {
     return;
   }
 
-  for (let articleIndex = 0; articleIndex < basket.length; articleIndex++) {
-    const article = basket[articleIndex];
+  for (let basketArticleIndex = 0; basketArticleIndex < basket.length; basketArticleIndex++) {
+    const article = basket[basketArticleIndex];
     const subtotal = article.price * article.amount;
     totalSum += subtotal;
 
@@ -99,9 +99,9 @@ function renderBasket() {
                     ${article.price.toFixed(2)}€ x ${article.amount} = ${subtotal.toFixed(2)}€
                 </div>
                 <div class="basket-item-controls">
-                    <button onclick="changeAmount(${articleIndex}, -1)">-</button>
+                    <button onclick="changeAmount(${basketArticleIndex}, -1)">-</button>
                     <span>${article.amount}</span>
-                    <button onclick="changeAmount(${articleIndex}, 1)">+</button>
+                    <button onclick="changeAmount(${basketArticleIndex}, +1)">+</button>
                 </div>
             </div>
             <hr>
@@ -117,3 +117,13 @@ function renderBasket() {
 
 
 //im Warenkorb Menge soll veränderbar sein, oder löschen bei 1
+
+function changeAmount(basketArticleIndex, change) {
+    basket[basketArticleIndex].amount += change;
+
+    if (basket[basketArticleIndex].amount <= 0) {
+        basket.splice(basketArticleIndex, 1);
+    }
+
+    renderBasket();
+}
