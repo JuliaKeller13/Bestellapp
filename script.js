@@ -1,5 +1,8 @@
+const basket = [];
+
 function init() {
     renderFoodCards();
+    renderBasket();
 }
 
 function renderFoodCards() {
@@ -23,4 +26,30 @@ function renderFoodCards() {
         menuCardsCupcakesSection.innerHTML += getFoodCardsHtml(articlesIndex);
     }
 }
+}
+
+//ad to basket
+function addToBasket(articlesIndex) {
+    const article = articles[articlesIndex];
+    
+    let existingArticles = null;
+    for (let articlesIndex = 0; articlesIndex < basket.length; articlesIndex++) {
+        if (basket[articlesIndex].title === article.title) {
+            existingArticles = basket[articlesIndex];
+            return;
+        }
+    }
+
+    if (existingArticles) {
+        existingArticles.amount++;
+
+    } else {
+        basket.push({
+            "title": article.title,
+            "price": article.price,
+            "amount": 1
+        });
+    }
+    
+    renderBasket();
 }

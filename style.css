@@ -56,8 +56,13 @@ header {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 12px;
+    text-align: center;
 }
 
+.basket-empty-img{
+    height: 120px;
+    
+}
 .hero {
     display: flex;
     flex-direction: column;
@@ -179,9 +184,7 @@ footer {
     align-items: center;
     height: 80px;
     width: 100%;
-    background-color: #47403483;
-    backdrop-filter: blur(10px);
-    border: solid 1px #c9c6c27a;
+    background-color: white;
     position: fixed;
     bottom: 0;
     left: 0;

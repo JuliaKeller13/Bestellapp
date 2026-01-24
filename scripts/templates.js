@@ -9,7 +9,7 @@ function getFoodCardsHtml(articlesIndex) {
                 </div>
                 <div class="food-card-buttons">
                     <p>${articles[articlesIndex].price.toFixed(2)}€</p>
-                    <button class="add-to-basket-button">Hinzufügen</button>
+                    <button class="add-to-basket-button" onclick="addToBasket(${articlesIndex})">Hinzufügen</button>
                 </div>
             </div>
         </div>

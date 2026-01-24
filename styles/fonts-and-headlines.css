@@ -63,7 +63,7 @@ h1 {
 }
 
 h1 span {
-    color: rgba(177, 135, 81, 0.856);
+    color: rgba(177, 135, 81, 0.855);
 }
 
 .reviews {
@@ -114,4 +114,11 @@ footer {
     font-family: "Palanquin";
     font-size: 18px;
     font-weight: 400;
+}
+
+/* basket */
+.basket{
+    font-family: "Palanquin";
+    font-weight: 500;
+    font-size: 18px;
 }
