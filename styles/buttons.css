@@ -8,13 +8,11 @@
 }
 
 .add-to-basket-button:hover{
-    background-color: #89503684;
+    background-color: #895036c0;
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0.4);
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
-.add-to-basket-button:hover {
-    transform: translateY(-2px);
-}
+
 
 .burger {
   width: 40px;
