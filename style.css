@@ -3,8 +3,8 @@
     padding: 0;
 }
 
-body{
-    margin-bottom: 80px;
+footer{
+    padding-bottom: 77px;
 }
 
 header {
@@ -25,7 +25,8 @@ header {
 }
 
 .logo-header {
-    height: 50px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .content-wrapper {
@@ -40,7 +41,7 @@ header {
 }
 
 .basket-wrapper {
-    width: 300px;
+    width: 350px;
     flex-grow: 1;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
@@ -63,7 +64,7 @@ header {
     background-image: url("./assets/imgs/hover.webp");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 500px;
 }
 
 .headline-container {
@@ -172,8 +173,9 @@ footer {
     align-items: center;
     height: 80px;
     width: 100%;
-    background-color: #ab916c4f;;
+    background-color: hsla(0, 0%, 100%, 0.562);
     backdrop-filter: blur(10px);
+    border: solid 1px hsla(24, 100%, 99%, 0.89);
     position: fixed;
     bottom: 0;
     left: 0;
