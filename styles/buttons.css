@@ -34,17 +34,11 @@
 
 .add-to-basket-button{
     background-color: #89503684;
-    padding: 8px;
+    padding: 14px;
     border: solid 0 #5a482e;
     border-radius: 8px;
     color: white;
     cursor: pointer;
-}
-
-.add-to-basket-button:hover{
-    background-color: #895036c0;
-    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.4);
-    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .buy-button{
@@ -57,8 +51,34 @@
     font-size: 20px;
 }
 
-.buy-button:hover{
+.add-to-basket-button:hover, .buy-button:hover{
     background-color: #895036c0;
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0.4);
     transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.amount-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ab916c23;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 100;
+  transition: background-color 0.2s;
+}
+
+.amount-button:hover {
+  background-color: #ab916c38;
+}
+
+.amount-display {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
 }

@@ -34,9 +34,9 @@ function getFoodCardsHtml(articleIndex) {
           <div class="article-title">${article.amount}x <b>${article.title}</b></div>
           <div class="amountbtns-price">
             <div class="buttons">
-              <button onclick="changeAmount(${basketArticleIndex}, -1)">-</button>
-              <span>${article.amount}</span>
-              <button onclick="changeAmount(${basketArticleIndex}, +1)">+</button>
+              <button class="amount-button" onclick="changeAmount(${basketArticleIndex}, -1)">-</button>
+              <span class="amount-display">${article.amount}</span>
+              <button class="amount-button" onclick="changeAmount(${basketArticleIndex}, +1)">+</button>
             </div>
             <div class="price">${subtotal.toFixed(2)}€</div>
           </div>

@@ -68,7 +68,9 @@ function addToBasket(articleIndex) {
 }
 
 function renderBasket() {
-  let totalSum = 0;
+  let subtotal = 0;
+  const deliveryCosts = 5.00;
+  
   const basketContent = document.getElementById("basketContent");
   basketContent.innerHTML = "";
 
@@ -79,17 +81,19 @@ function renderBasket() {
 
   for (let basketArticleIndex = 0;basketArticleIndex < basket.length; basketArticleIndex++) {
     const article = basket[basketArticleIndex];
-    totalSum += article.price * article.amount;
+    subtotal += article.price * article.amount;
 
     basketContent.innerHTML += getBasketArticleCardHtml(article, basketArticleIndex);
   }
 
+  const finalTotal = subtotal + deliveryCosts;
   basketContent.innerHTML += `    
         <div class="basket-total">
           <hr>
+          <span>+ ${deliveryCosts.toFixed(2)}€ Lieferungskosten</span>
           <div class="totalsum">
           <strong>Gesamtsumme:</strong>
-          <strong>${totalSum.toFixed(2)}€</strong>
+          <strong>${finalTotal.toFixed(2)}€</strong>
         </div>
         <button class="buy-button" id="buyButton">Bestellen</button>
     `;
