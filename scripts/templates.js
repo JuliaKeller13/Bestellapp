@@ -31,15 +31,36 @@ function getFoodCardsHtml(articleIndex) {
     const subtotal = article.price * article.amount;
     return `
         <div class="basket-articles">
-          <div class="article-title">${article.amount}x <b>${article.title}</b></div>
+          <div class="amountbtns-price">
+            <div class="cost"><b>${article.title}</b></div>
+            <button class="trash-btn" onclick="deleteFromBasket(${basketArticleIndex})">
+              <img src="./assets/icons/delete.svg" alt="löschen">
+            </button>
+          </div>
           <div class="amountbtns-price">
             <div class="buttons">
-              <button class="amount-button" onclick="changeAmount(${basketArticleIndex}, -1)">-</button>
+              <button class="small-basket-button" onclick="changeAmount(${basketArticleIndex}, -1)">—</button>
               <span class="amount-display">${article.amount}</span>
-              <button class="amount-button" onclick="changeAmount(${basketArticleIndex}, +1)">+</button>
+              <button class="small-basket-button" onclick="changeAmount(${basketArticleIndex}, +1)">+</button>
             </div>
             <div class="price">${subtotal.toFixed(2)}€</div>
           </div>
         </div>
         `;
+  }
+
+  function getBasketTotalSumSectionHtml(finalTotal, deliveryCosts){
+    return `
+        <hr>    
+        <div class="cost"
+          <div class="cost">
+            <span>Lieferungskosten:</span>
+            <span>${deliveryCosts.toFixed(2)}€</span>
+          </div>
+          <div class="cost">
+            <strong>Gesamtsumme:</strong>
+            <strong>${finalTotal.toFixed(2)}€</strong>
+        </div>
+        <button class="buy-button" id="buyButton">Bestellen</button>
+    `;
   }

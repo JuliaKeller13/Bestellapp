@@ -39,6 +39,31 @@ function renderFoodCards() {
   }
 }
 
+function renderBasket() {
+  let subtotal = 0;
+  const deliveryCosts = 5.00;
+  
+  const basketContent = document.getElementById("basketContent");
+  const basketTotal = document.getElementById("basketTotal");
+  basketContent.innerHTML = "";
+  basketTotal.innerHTML = "";
+
+  if (basket.length === 0) {
+    basketContent.innerHTML += getEmptyBasketHtml();
+    return;
+  }
+
+  for (let basketArticleIndex = 0; basketArticleIndex < basket.length; basketArticleIndex++) {
+    const article = basket[basketArticleIndex];
+    subtotal += article.price * article.amount;
+
+    basketContent.innerHTML += getBasketArticleCardHtml(article, basketArticleIndex);
+  }
+
+  const finalTotal = subtotal + deliveryCosts;
+  basketTotal.innerHTML += getBasketTotalSumSectionHtml(finalTotal, deliveryCosts);
+}
+
 function addToBasket(articleIndex) {
   const article = articles[articleIndex];
 
@@ -67,40 +92,6 @@ function addToBasket(articleIndex) {
   renderBasket();
 }
 
-function renderBasket() {
-  let subtotal = 0;
-  const deliveryCosts = 5.00;
-  
-  const basketContent = document.getElementById("basketContent");
-  basketContent.innerHTML = "";
-
-  if (basket.length === 0) {
-    basketContent.innerHTML += getEmptyBasketHtml();
-    return;
-  }
-
-  for (let basketArticleIndex = 0;basketArticleIndex < basket.length; basketArticleIndex++) {
-    const article = basket[basketArticleIndex];
-    subtotal += article.price * article.amount;
-
-    basketContent.innerHTML += getBasketArticleCardHtml(article, basketArticleIndex);
-  }
-
-  const finalTotal = subtotal + deliveryCosts;
-  basketContent.innerHTML += `    
-        <div class="basket-total">
-          <hr>
-          <span>+ ${deliveryCosts.toFixed(2)}€ Lieferungskosten</span>
-          <div class="totalsum">
-          <strong>Gesamtsumme:</strong>
-          <strong>${finalTotal.toFixed(2)}€</strong>
-        </div>
-        <button class="buy-button" id="buyButton">Bestellen</button>
-    `;
-}
-
-//im Warenkorb Menge soll veränderbar sein, oder löschen bei 1
-
 function changeAmount(basketArticleIndex, change) {
   basket[basketArticleIndex].amount += change;
 
@@ -109,4 +100,19 @@ function changeAmount(basketArticleIndex, change) {
   }
 
   renderBasket();
+}
+
+function deleteFromBasket(basketArticleIndex){
+  basket.splice(basketArticleIndex, 1);
+
+  renderBasket();
+}
+
+function getAmountBasketArticles() {
+  let amount = 0;
+
+  for (let indexBasketArticle = 0; indexBasketArticle < basket.length; indexBasketArticle++) {
+    amount += basket[indexBasketArticle].amount;
+  }
+  return amount;
 }
