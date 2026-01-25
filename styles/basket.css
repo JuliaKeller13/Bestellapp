@@ -1,7 +1,7 @@
 .basket-wrapper {
   width: 350px;
   flex-grow: 1;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   border-left: 1px solid #eee;
 }
 
@@ -16,7 +16,7 @@
 
 .basket-content{
   overflow-y: auto;
-  max-height: 60vh;
+  max-height: 70vh;
   display: flex;
   flex-direction: column;
   gap: 10px;

@@ -3,6 +3,7 @@ const basket = [];
 function init() {
   renderFoodCards();
   renderBasket();
+  showBasketAmount();
 }
 
 function renderFoodCards() {
@@ -135,10 +136,12 @@ function getAmountBasketArticles() {
 }
 
 function showBasketAmount() {
-  totalAmount = getAmountBasketArticles();
+  let totalAmount = getAmountBasketArticles();
   const amountBasket = document.getElementById("basketArtAmount");
 
   if (amountBasket) {
     amountBasket.innerText = totalAmount;
+    amountBasket.classList.toggle("d-none", totalAmount === 0);
   }
 }
+
