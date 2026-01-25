@@ -41,8 +41,8 @@ function renderFoodCards() {
 
 function renderBasket() {
   let subtotal = 0;
-  const deliveryCosts = 5.00;
-  
+  const deliveryCosts = 5.0;
+
   const basketContent = document.getElementById("basketContent");
   const basketTotal = document.getElementById("basketTotal");
   basketContent.innerHTML = "";
@@ -53,15 +53,25 @@ function renderBasket() {
     return;
   }
 
-  for (let basketArticleIndex = 0; basketArticleIndex < basket.length; basketArticleIndex++) {
+  for (
+    let basketArticleIndex = 0;
+    basketArticleIndex < basket.length;
+    basketArticleIndex++
+  ) {
     const article = basket[basketArticleIndex];
     subtotal += article.price * article.amount;
 
-    basketContent.innerHTML += getBasketArticleCardHtml(article, basketArticleIndex);
+    basketContent.innerHTML += getBasketArticleCardHtml(
+      article,
+      basketArticleIndex,
+    );
   }
 
   const finalTotal = subtotal + deliveryCosts;
-  basketTotal.innerHTML += getBasketTotalSumSectionHtml(finalTotal, deliveryCosts);
+  basketTotal.innerHTML += getBasketTotalSumSectionHtml(
+    finalTotal,
+    deliveryCosts,
+  );
 }
 
 function addToBasket(articleIndex) {
@@ -90,6 +100,7 @@ function addToBasket(articleIndex) {
   }
 
   renderBasket();
+  showBasketAmount();
 }
 
 function changeAmount(basketArticleIndex, change) {
@@ -100,19 +111,34 @@ function changeAmount(basketArticleIndex, change) {
   }
 
   renderBasket();
+  showBasketAmount();
 }
 
-function deleteFromBasket(basketArticleIndex){
+function deleteFromBasket(basketArticleIndex) {
   basket.splice(basketArticleIndex, 1);
 
   renderBasket();
+  showBasketAmount();
 }
 
 function getAmountBasketArticles() {
   let amount = 0;
 
-  for (let indexBasketArticle = 0; indexBasketArticle < basket.length; indexBasketArticle++) {
+  for (
+    let indexBasketArticle = 0;
+    indexBasketArticle < basket.length;
+    indexBasketArticle++
+  ) {
     amount += basket[indexBasketArticle].amount;
   }
   return amount;
+}
+
+function showBasketAmount() {
+  totalAmount = getAmountBasketArticles();
+  const amountBasket = document.getElementById("basketArtAmount");
+
+  if (amountBasket) {
+    amountBasket.innerText = totalAmount;
+  }
 }
