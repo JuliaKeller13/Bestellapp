@@ -28,6 +28,7 @@ function getFoodCardsHtml(articleIndex) {
   }
 
   function getBasketArticleCardHtml(article, basketArticleIndex) {
+    const subtotal = article.price * article.amount;
     return `
         <div class="basket-articles">
           <div class="article-title">${article.amount}x <b>${article.title}</b></div>

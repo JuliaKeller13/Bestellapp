@@ -41,13 +41,6 @@ header {
     margin-bottom: 50px;
 }
 
-.basket-wrapper {
-    width: 350px;
-    flex-grow: 1;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
-    border-left: 1px solid #eee;
-}
-
 .hero {
     display: flex;
     flex-direction: column;

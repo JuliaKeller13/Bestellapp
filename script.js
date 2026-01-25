@@ -39,7 +39,6 @@ function renderFoodCards() {
   }
 }
 
-//add to basket
 function addToBasket(articleIndex) {
   const article = articles[articleIndex];
 
@@ -85,11 +84,14 @@ function renderBasket() {
     basketContent.innerHTML += getBasketArticleCardHtml(article, basketArticleIndex);
   }
 
-  basketContent.innerHTML += `
-        <hr>
+  basketContent.innerHTML += `    
         <div class="basket-total">
-            <strong>Gesamtsumme: ${totalSum.toFixed(2)}€</strong>
+          <hr>
+          <div class="totalsum">
+          <strong>Gesamtsumme:</strong>
+          <strong>${totalSum.toFixed(2)}€</strong>
         </div>
+        <button class="buy-button" id="buyButton">Bestellen</button>
     `;
 }
 
