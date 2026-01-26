@@ -149,6 +149,11 @@ function showBasketAmount() {
   }
 }
 
+function showMobileBasket(){
+  const basketWrapper = document.getElementById("basketWrapper");
+  basketWrapper.classList.toggle("basket-mobile");
+}
+
 function saveToLocalStorage(){
   localStorage.setItem("basket", JSON.stringify(basket));
 }
@@ -166,4 +171,3 @@ function getFromLocalStorage(){
 
   renderBasket();
 }
-

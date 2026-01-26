@@ -183,25 +183,3 @@ footer {
   height: 30px;
   display: block;
 }
-
-.basket-art-amount {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 12px;
-  border-radius: 50%;
-  border: 1px solid #3333333b;
-  background-color: #5a3a2e;
-  color: white;
-  font-weight: 700;
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(50%, -50%);
-}
-
-.d-none {
-  display: none;
-}

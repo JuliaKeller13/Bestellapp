@@ -30,7 +30,23 @@
   }
 
   .basket-wrapper {
-    display: none;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    bottom: -100%;
+    height: 100vh;
+    width: 100%;
+    transition: bottom 0.3s ease-in-out;
+  }
+
+  .basket-mobile{
+    bottom: 0;
+    top: top;
+  }
+
+  .basket{
+    width: 100%;
+    padding-top: 50px;
   }
 
   .content {
