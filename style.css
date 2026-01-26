@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.d-none {
-  display: none;
-}
-
 footer {
   padding-bottom: 77px;
 }
@@ -204,4 +200,8 @@ footer {
   justify-content: center;
   align-items: center;
   transform: translate(50%, -50%);
+}
+
+.d-none {
+  display: none;
 }
