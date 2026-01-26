@@ -79,8 +79,9 @@ function renderBasket() {
 
 function addToBasket(articleIndex) {
   const article = articles[articleIndex];
-
+  const button = document.getElementById(`btn${articleIndex}`);
   let existingArticle = null;
+
   for (
     let basketArticleIndex = 0;
     basketArticleIndex < basket.length;
@@ -102,6 +103,18 @@ function addToBasket(articleIndex) {
     });
   }
 
+  if (button) {
+    const originalText = button.innerText;
+    button.innerText = "Hinzugefügt";
+    button.classList.add("pressed-button");
+    button.disabled = true;
+  
+  setTimeout(function() {
+      button.innerText = originalText;
+      button.classList.remove("pressed-button");
+      button.disabled = false;
+    }, 1500);
+}
   renderBasket();
   showBasketAmount();
   saveToLocalStorage();

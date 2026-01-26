@@ -9,7 +9,7 @@ function getFoodCardsHtml(articleIndex) {
                 </div>
                 <div class="food-card-buttons">
                     <p>${articles[articleIndex].price.toFixed(2)}€</p>
-                    <button class="add-to-basket-button" onclick="addToBasket(${articleIndex})">Hinzufügen</button>
+                    <button id="btn${articleIndex}" class="add-to-basket-button" onclick="addToBasket(${articleIndex})">Hinzufügen</button>
                 </div>
             </div>
         </div>
@@ -32,10 +32,8 @@ function getFoodCardsHtml(articleIndex) {
     return `
         <div class="basket-articles">
           <div class="amountbtns-price">
-            <div class="cost"><b>${article.title}</b></div>
-            <button class="trash-btn" onclick="deleteFromBasket(${basketArticleIndex})">
-              <img src="./assets/icons/delete.svg" alt="löschen">
-            </button>
+            <div><b>${article.title}</b></div>
+            <div>${subtotal.toFixed(2)}€</div>
           </div>
           <div class="amountbtns-price">
             <div class="buttons">
@@ -43,7 +41,9 @@ function getFoodCardsHtml(articleIndex) {
               <span class="amount-display">${article.amount}</span>
               <button class="small-basket-button" onclick="changeAmount(${basketArticleIndex}, +1)">+</button>
             </div>
-            <div class="price">${subtotal.toFixed(2)}€</div>
+            <button class="trash-btn" onclick="deleteFromBasket(${basketArticleIndex})">
+              <img src="./assets/icons/delete.svg" alt="löschen">
+            </button>
           </div>
         </div>
         `;
@@ -51,20 +51,23 @@ function getFoodCardsHtml(articleIndex) {
 
   function getBasketTotalSumSectionHtml(finalTotal, subtotal, deliveryCosts){
     return `
-        <hr>    
-        <div class="cost"
-          <div class="cost">
+          
+        <div class="cost">
+          <div class="cost-category">
             <span>Zwischensumme:</span>
             <span>${deliveryCosts.toFixed(2)}€</span>
           </div>
-          <div class="cost">
+          <div class="cost-category">
             <span>Lieferungskosten:</span>
             <span>${subtotal.toFixed(2)}€</span>
           </div>
-          <div class="cost">
+        </div>
+
+        <hr>  
+          <div class="total-cost">
             <strong>Gesamtsumme:</strong>
             <strong>${finalTotal.toFixed(2)}€</strong>
-        </div>
+          </div>
         <button class="buy-button" id="buyButton">Bestellen</button>
     `;
   }
