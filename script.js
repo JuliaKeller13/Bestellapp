@@ -1,6 +1,7 @@
 const basket = [];
 
 function init() {
+  getFromLocalStorage()
   renderFoodCards();
   renderBasket();
   showBasketAmount();
@@ -102,6 +103,7 @@ function addToBasket(articleIndex) {
 
   renderBasket();
   showBasketAmount();
+  saveToLocalStorage();
 }
 
 function changeAmount(basketArticleIndex, change) {
@@ -113,6 +115,7 @@ function changeAmount(basketArticleIndex, change) {
 
   renderBasket();
   showBasketAmount();
+  saveToLocalStorage();
 }
 
 function deleteFromBasket(basketArticleIndex) {
@@ -120,6 +123,7 @@ function deleteFromBasket(basketArticleIndex) {
 
   renderBasket();
   showBasketAmount();
+  saveToLocalStorage();
 }
 
 function getAmountBasketArticles() {
@@ -143,5 +147,23 @@ function showBasketAmount() {
     amountBasket.innerText = totalAmount;
     amountBasket.classList.toggle("d-none", totalAmount === 0);
   }
+}
+
+function saveToLocalStorage(){
+  localStorage.setItem("basket", JSON.stringify(basket));
+}
+
+function getFromLocalStorage(){
+  let savedBasket = localStorage.getItem("basket");
+
+  if (savedBasket) {
+    const data = JSON.parse(savedBasket);
+    basket.length = 0;
+    basket.push(...data);
+  } else {
+    saveToLocalStorage();
+  }
+
+  renderBasket();
 }
 
