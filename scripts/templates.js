@@ -49,13 +49,17 @@ function getFoodCardsHtml(articleIndex) {
         `;
   }
 
-  function getBasketTotalSumSectionHtml(finalTotal, deliveryCosts){
+  function getBasketTotalSumSectionHtml(finalTotal, subtotal, deliveryCosts){
     return `
         <hr>    
         <div class="cost"
           <div class="cost">
-            <span>Lieferungskosten:</span>
+            <span>Zwischensumme:</span>
             <span>${deliveryCosts.toFixed(2)}€</span>
+          </div>
+          <div class="cost">
+            <span>Lieferungskosten:</span>
+            <span>${subtotal.toFixed(2)}€</span>
           </div>
           <div class="cost">
             <strong>Gesamtsumme:</strong>

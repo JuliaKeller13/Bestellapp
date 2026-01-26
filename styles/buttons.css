@@ -50,6 +50,7 @@
     cursor: pointer;
     font-size: 20px;
     width: 100%;
+    margin-top: 10px;
 }
 
 .add-to-basket-button:hover, .buy-button:hover{

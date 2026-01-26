@@ -73,6 +73,7 @@ function renderBasket() {
   basketTotal.innerHTML += getBasketTotalSumSectionHtml(
     finalTotal,
     deliveryCosts,
+    subtotal
   );
 }
 

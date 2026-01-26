@@ -16,10 +16,9 @@
 
 .basket-content{
   overflow-y: auto;
-  max-height: 60vh;
+  max-height: 50vh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .basket-empty {
