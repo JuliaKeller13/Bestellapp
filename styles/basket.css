@@ -99,3 +99,7 @@
 .d-none {
   display: none;
 }
+
+.basket-close-header {
+  display: none;
+}

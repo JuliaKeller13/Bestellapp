@@ -44,17 +44,22 @@
     height: 100vh;
     width: 100%;
     transition: bottom 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   .basket-mobile{
     bottom: 0;
-    top: top;
+    top: 0;
   }
 
   .basket{
     width: 100%;
-    padding-top: 30px;
+    padding-top: 80px;
     max-height: 90vh;
+  }
+
+  .desktop-basket-header{
+    display: none;
   }
 
   .content {
@@ -71,6 +76,20 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+
+  .basket-close-header {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    z-index: 10;
   }
 }
 

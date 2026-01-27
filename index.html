@@ -15,9 +15,8 @@
     <link rel="stylesheet" href="./styles/foodcards.css" />
     <link rel="stylesheet" href="./styles/buttons.css" />
     <link rel="stylesheet" href="./styles/responsiv.css" />
-    
   </head>
-  
+
   <body onload="init()">
     <header>
       <div class="header-inner">
@@ -110,7 +109,13 @@
         </div>
         <section class="basket-wrapper" id="basketWrapper">
           <div class="basket">
-            <h2>Warenkorb</h2>
+            <div class="basket-close-header">
+              <h2>Warenkorb</h2>
+              <button class="small-basket-button" onclick="showMobileBasket()">
+                ✕
+              </button>
+            </div>
+            <h2 class="desktop-basket-header">Warenkorb</h2>
             <div class="basket-content" id="basketContent"></div>
             <div class="basket-content" id="basketTotal"></div>
           </div>
@@ -123,13 +128,13 @@
       </footer>
       <nav class="bottom-nav">
         <button>
-          <img src="./assets/icons/home.png" alt="Home icon"/>
+          <img src="./assets/icons/home.png" alt="Home icon" />
         </button>
         <button>
-          <img src="./assets/icons/person.png" alt="Person icon"/>
+          <img src="./assets/icons/person.png" alt="Person icon" />
         </button>
         <button>
-          <img src="./assets/icons/takeout-dining.png" alt="Takout dinning"/>
+          <img src="./assets/icons/takeout-dining.png" alt="Takout dinning" />
         </button>
         <button onclick="showMobileBasket()">
           <img src="./assets/icons/shopping-cart.png" alt="Schopping cart" />

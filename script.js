@@ -166,6 +166,12 @@ function showBasketAmount() {
 function showMobileBasket(){
   const basketWrapper = document.getElementById("basketWrapper");
   basketWrapper.classList.toggle("basket-mobile");
+
+  if (basketWrapper.classList.contains("basket-mobile")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
 }
 
 function saveToLocalStorage(){
