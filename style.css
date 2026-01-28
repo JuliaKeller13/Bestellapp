@@ -3,26 +3,26 @@
   padding: 0;
 }
 
-footer {
-  padding-bottom: 77px;
+body{
+  background-color: #fff9f2;
 }
 
-header {
+.header-global {
   background-color: #5a3a2e;
   height: 80px;
   width: 100%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .header-inner {
-  max-width: 1440px;
+  max-width: 2090px;
   height: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 40px;
-  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .logo-header {
@@ -34,6 +34,10 @@ header {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  max-width: 2090px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .content {
@@ -128,7 +132,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: 1440px;
+  max-width: 2090px;
   margin: auto;
   transform: translate(0, -10%);
 }
@@ -140,20 +144,15 @@ header {
 }
 
 /*footer*/
-footer {
+.footer-global {
   background-color: #5a3a2e;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  gap: 20px;
+  width: 100%;
 }
 
 .bottom-nav {
@@ -166,7 +165,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1001;
 }
 
 .bottom-nav button {
@@ -182,4 +181,39 @@ footer {
 .bottom-nav img {
   height: 30px;
   display: block;
+}
+
+/*dialog*/
+.dialog-mode {
+  border-radius: 12px;
+  border: 1px solid #ab916c23;
+  width: 90%;
+  max-width: 500px;
+  max-height: 300px;
+  margin: auto;
+}
+
+dialog{
+  text-align: center;
+}
+
+.dialog-mode-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: auto;
+}
+
+dialog::backdrop {
+  background: rgba(5, 22, 32, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.dialog-img{
+  width: 100px;
+}
+
+.footer-dialog{
+  margin-top: 20px;
 }

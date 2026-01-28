@@ -49,17 +49,17 @@ function getFoodCardsHtml(articleIndex) {
         `;
   }
 
-  function getBasketTotalSumSectionHtml(finalTotal, subtotal, deliveryCosts){
+  function getBasketTotalSumSectionHtml(finalTotal, deliveryCosts, subtotal){
     return `
           
         <div class="cost">
           <div class="cost-category">
             <span>Zwischensumme:</span>
-            <span>${deliveryCosts.toFixed(2)}€</span>
+            <span>${subtotal.toFixed(2)}€</span>
           </div>
           <div class="cost-category">
             <span>Lieferungskosten:</span>
-            <span>${subtotal.toFixed(2)}€</span>
+            <span>${deliveryCosts.toFixed(2)}€</span>
           </div>
         </div>
 
@@ -68,6 +68,6 @@ function getFoodCardsHtml(articleIndex) {
             <strong>Gesamtsumme:</strong>
             <strong>${finalTotal.toFixed(2)}€</strong>
           </div>
-        <button class="buy-button" id="buyButton">Bestellen</button>
+        <button class="buy-button" id="buyButton" onclick="openDialog()">Bestellen</button>
     `;
   }

@@ -107,13 +107,11 @@ function addToBasket(articleIndex) {
     const originalText = button.innerText;
     button.innerText = "Hinzugefügt";
     button.classList.add("pressed-button");
-    button.disabled = true;
   
   setTimeout(function() {
       button.innerText = originalText;
       button.classList.remove("pressed-button");
-      button.disabled = false;
-    }, 1500);
+    }, 800);
 }
   renderBasket();
   showBasketAmount();
@@ -190,4 +188,19 @@ function getFromLocalStorage(){
   }
 
   renderBasket();
+}
+
+function openDialog(){
+  const dialogRef = document.getElementById("dialogMode");
+  dialogRef.showModal();
+  basket.length = 0;
+
+  saveToLocalStorage();
+  renderBasket();
+  showBasketAmount();
+}
+
+function closeDialog(){
+  const dialogRef = document.getElementById("dialogMode");
+  dialogRef.close();
 }

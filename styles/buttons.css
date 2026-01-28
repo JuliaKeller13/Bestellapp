@@ -33,7 +33,7 @@
 }
 
 .add-to-basket-button {
-  background-color: #89503684;
+  background-color: #895036b6;
   padding: 14px;
   border: solid 0 #5a482e;
   border-radius: 8px;
@@ -53,7 +53,7 @@
 }
 
 .buy-button {
-  background-color: #89503684;
+  background-color: #895036b6;
   padding: 14px;
   border: solid 0 #5a482e;
   border-radius: 8px;
@@ -70,6 +70,7 @@
   border-radius: 6px;
   border: 1px solid #ab916c23;
   background-color: #f8f8f8;
+  color: #5a482e;
   cursor: pointer;
   display: flex;
   align-items: center;
