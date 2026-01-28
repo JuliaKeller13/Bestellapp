@@ -8,7 +8,7 @@
 .basket {
   position: sticky;
   top: 0;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
