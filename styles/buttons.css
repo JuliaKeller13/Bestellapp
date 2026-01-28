@@ -85,7 +85,7 @@
   height: 40px;
   border: none;
   cursor: pointer;
-  background-color: none;
+  background-color: transparent;
 }
 
 .small-basket-button:hover {
