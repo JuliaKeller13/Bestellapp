@@ -160,7 +160,7 @@ body{
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  width: 100%;
+  width: 100vw;
   background-color: white;
   position: fixed;
   bottom: 0;
